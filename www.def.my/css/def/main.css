@@ -1,17 +1,56 @@
 *{
     outline: none;
-    transition: .3s;
+    transition: .4s;
     font-family: "Montserrat", Helvetica,Arial, sans-serif;
     box-sizing:border-box
 }
-body{position: relative}
+html,body{
+    height: 100%;
+    text-align: justify;
+    cursor:default;
+    background-color:#fcfcfc;
+    position: relative
+}
+h1, h2, h3, h4{
+    text-align:center;
+    margin:15px auto;
+    font-weight:normal;
+}
+h1{font-size:180%}
+h2{font-size:130%}
+h3{font-size:120%}
+/*h1,h2,h3,h4{color:#b9cfff}*/
+p,ul{margin:5px;}
+p{line-height: 1.5;}
+ul li{list-style-type: none}
 
-.wrap{
+/*A:link, .link {
+    color:#fcfcfc;
+    text-decoration:underline
+}
+
+A:active {
+    color:#4CA5C6
+}
+
+A:visited {
+    color:#fcfcfc
+}
+
+A:hover, .link:hover {
+    color:#4CA5C6;
+    text-decoration: blink
+}*/
+.maxw{
     margin: 0 auto;
+    min-width: 150px;
+    /*max-width: 1240px;*/
+
     position: relative;
-    width: 1180px;
-    max-width: 100%;
-    border: burlywood 1px dotted;
+    /*width: 1180px;*/
+    max-width: 1280px;
+    border-left: burlywood 1px dotted;
+    border-right: burlywood 1px dotted;
     overflow: hidden;
 
 }
@@ -22,10 +61,7 @@ body{position: relative}
     position:absolute;
     top: 0;
     left: 0;
-/*    right: 0;
-    bottom: 0;*/
-    z-index:1;
-    /*height: 100%;*/
+    z-index:0;
     height:100%;
     width:100%;
 }
@@ -35,38 +71,28 @@ header{
     top: 0;
     left: 0;
     right: 0;
-    padding-top: 14px;
-    padding-bottom: 40px;
+    padding: 14px 0 40px;
     /*background-color: rgba(0, 0, 25, 0.3);*/
     border: aquamarine 1px solid;
-    min-height: 90px;
-    z-index: 10;
+    min-height:125px;
+    z-index: 2;
+}
+footer{
+    border: aquamarine 1px solid;
+    min-height: 150px;
 }
 
-
-
-/*
-.f1{
-    z-index:1;
-    position:absolute;
-    width: 100%;
-    height:60%;
-    !*background-color: aquamarine;*!
-
+#shadow{
+    display:none;
+    position:fixed;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    z-index:999;
+    background:rgba(0,0,0,0.8);
 }
-.f2{
-    z-index:2;
-    position:absolute;
-    width: 100%;
-    height: 70%;
-    !*background-color:cadetblue;*!
 
-}
-.f3{
-    z-index: -1;
-    position:absolute;
-    width: 100%;
-    height:80%;
-    background-color: burlywood;
+/*******************************************************************************/
 
-}*/
+
