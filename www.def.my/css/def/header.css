@@ -1,0 +1,47 @@
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 14px 0 40px;
+    /*background-color: rgba(0, 0, 25, 0.3);*/
+    border: aquamarine 1px solid;
+    min-height:125px;
+    z-index: 2;
+
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 17px;
+    color: #fcfcfc
+}
+
+header .maxw{
+    display: grid;
+    grid-template-columns: 1fr 1.6fr 1.3fr 1fr;
+    grid-column-gap: 67px;
+    align-items: center;
+
+}
+header .maxw div{
+    border-right: 1px solid #13E8E9;
+    border-left: 1px solid #13E8E9;
+}
+
+.logo img {margin-right: 10px; vertical-align: middle;}
+.logo p {vertical-align: middle; display: inline-block; color: #A7A7A7;   line-height: 17px;}
+
+
+
+.msg{display: grid; grid-template-columns:1fr 12fr;grid-column-gap:10px; align-items:center;}
+.msg p{text-align:right}
+.msgBtn{display: grid; grid-template-columns: 1fr 1fr; grid-column-gap:10px}
+.msgBtn a{padding:9px 0;background:rgba(255,255,255,.07);border-radius:11px;text-align:center}
+.msgBtn a:nth-child(1):hover{box-shadow: 0 0 10px 0 rgba(76,175,80,.5);background:rgba(76,175,80,.1)}
+.msgBtn a:nth-child(2):hover{box-shadow: 0 0 10px 0 rgba(15,169,243,.5);background:rgba(15,169,243,.1)}
+
+
+
+header .phone {text-align: right;}
+header .phone a {font-weight: 700; font-size: 20px; line-height: 24px; color:#fcfcfc; display: block; margin-bottom: 10px;}
+header .phone a:hover {color:#F50000; font-size:21px}
+header .phone p{font-weight: 400; font-size: 14px; line-height: 17px;color:#A7A7A7/* #BDBDBD*/}
