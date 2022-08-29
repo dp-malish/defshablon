@@ -43,7 +43,7 @@ A:hover, .link:hover {
 }*/
 .maxw{
     margin: 0 auto;
-    min-width: 150px;
+    /*min-width: 150px;*/
     /*max-width: 1240px;*/
 
     position: relative;
