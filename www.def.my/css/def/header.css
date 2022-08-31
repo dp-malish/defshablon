@@ -15,7 +15,7 @@ header{
 
 header .maxw{
     display: grid;
-    grid-template-columns:1.05fr 1.6fr 1.3fr 0.95fr 0.13fr;
+    grid-template-columns:1.05fr 1.6fr 1.3fr 0.95fr 55px;
     grid-column-gap:45px;
     align-items:center;
     overflow:visible;
@@ -23,8 +23,8 @@ header .maxw{
 }
 header .maxw div{
     /*border-right: 1px solid #13E8E9;
-    border-left: 1px solid #13E8E9;*/
-    background-color: #CE8800;
+    border-left: 1px solid #13E8E9;
+    background-color: #CE8800;*/
 }
 
 header .logo img {margin-right: 10px; vertical-align: middle;}
@@ -90,7 +90,7 @@ header .msgBtn a:nth-child(2):hover{box-shadow: 0 0 10px 0 rgba(15,169,243,.5);b
 
 header .phone {text-align: right;}
 header .phone a {font-weight:600; font-size: 20px; line-height: 24px; color:#fcfcfc; display: block; margin-bottom: 10px;}
-header .phone a:hover {color:#F50000; font-size:21px}
+header .phone a:hover {color:#E5BB3B; font-size:21px}
 header .phone p{font-weight: 400; font-size: 14px; line-height: 17px;color:#A7A7A7}
 
 /*********************************/
@@ -103,7 +103,7 @@ header .lng{
 }
 
 header .lngImg{
-    margin-top:5px;
+    padding-top:5px;
     content: url("/img/flag/ru32.png");
     cursor: pointer;
 }
@@ -122,15 +122,80 @@ header .lngAll{
     border-radius:7px;
 }
 header .lngAll img{
-    cursor: pointer;
-    margin:11px;
+    cursor:pointer
 }
 
-@media (min-width: 1000px) and (max-width: 1260px){
+/*Кнопка бургер*/
+header .menu{
+    display:none;
+    position:fixed;
+    z-index:101;
+    top:25px;
+    right:15px;
+    width:50px;
+    height:50px;
+    background-color:rgba(10,10,10,.7);
+}
+
+
+
+
+
+
+
+
+
+@media (min-width: 1060px) and (max-width: 1260px){
     header .maxw{
-
-        /*grid-template-columns:0.7fr 1.2fr 1.15fr 0.6fr 0.25fr;*/
         grid-column-gap:0;
-
     }
 }
+@media (max-width: 1059px){
+    header .arrow{
+        display:none;
+    }
+    header .kp p{
+        display: none;
+    }
+}
+@media (min-width: 801px) and (max-width: 1059px){
+
+    header .maxw{
+        grid-template-columns:0.7fr 195px 0.75fr 0.6fr 55px;
+        grid-column-gap:0;
+    }
+
+}
+@media (max-width: 1000px){
+    header .msg{grid-template-columns:1fr;}
+    header .msg p{display:none}
+
+}
+
+@media (min-width: 801px) and (max-width: 1000px){
+
+    header .maxw{
+        grid-template-columns:0.7fr 195px 180px 0.6fr 55px;
+        grid-column-gap:3%;
+    }
+
+}
+@media (max-width:975px){
+    header .kp{display:none}
+}
+@media (min-width:801px) and (max-width:975px){
+
+    header .maxw{
+        grid-template-columns:0.67fr 180px 0.5fr 65px;
+        grid-column-gap:3%;
+    }
+
+}
+/*мобильный вид*/
+
+
+@media (max-width:950px){
+    header .lng{display:none}
+    header .menu{display:block}
+}
+
