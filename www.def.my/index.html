@@ -108,6 +108,10 @@
             <div class="b-body">
 
                 <div class="b-h-line"><a href="/">Главная</a></div>
+                <div class="b-h-line"><a href="/">Главная</a></div>
+                <div class="b-h-line"><a href="/">Главная</a></div>
+                <div class="b-h-line"><a href="/">Главная ghjjl</a></div>
+                <div class="b-h-line"><a href="/">Рассчитать стоимость</a></div>
                 <div class="b-h-line">d</div>
                 <div class="b-h-line">d</div>
                 <div class="b-h-line">d</div>
@@ -132,7 +136,8 @@
 
             const menuBody=()=>{
                 document.getElementById("menu").classList.toggle('active');
-                document.getElementById("menu_body").classList.toggle('hide');
+                //document.getElementById("menu_body").classList.toggle('hide');
+                document.getElementById("menu_body").classList.toggle('active');
                 return false;
             }
             document.getElementById("menu").addEventListener("click",()=>menuBody());
@@ -140,7 +145,8 @@
             window.addEventListener("resize",()=>{
                 if(window.innerWidth>950){//скрыть бургер
                     document.getElementById("menu").classList.remove("active");
-                    document.getElementById("menu_body").classList.add("hide");
+                    //document.getElementById("menu_body").classList.add("hide");
+                    document.getElementById("menu_body").classList.add("active");
                 }
             },true);
 
